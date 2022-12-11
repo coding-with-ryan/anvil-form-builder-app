@@ -1,0 +1,40 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"UINOMW":15,"CUNAHM":45}'}
+components:
+- type: ColumnPanel
+  properties: {role: tonal-card, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"LCRQME":45,"ZDEYXZ":15}',
+    spacing_below: small, background: ''}
+  name: outlined_card_1
+  layout_properties: {grid_position: 'EHSVAE,UINOMW', full_width_row: true}
+  components:
+  - type: Label
+    properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Content, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: component_sidebar_title
+    layout_properties: {grid_position: 'DVLEGV,LCRQME'}
+  - type: Button
+    properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:plus'}
+    name: button_1
+    layout_properties: {grid_position: 'DVLEGV,ZDEYXZ'}
+    event_bindings: {click: button_1_click}
+  - type: Spacer
+    properties: {visible: true, spacing_above: small, spacing_below: small, height: 0,
+      tooltip: ''}
+    name: spacer_1
+    layout_properties: {grid_position: 'EUQUCY,QLADMH', row_background: 'theme:Secondary
+        Container'}
+- type: ColumnPanel
+  properties: {role: outlined-card}
+  name: outlined_card_1_copy
+  layout_properties:
+    col_widths: {}
+    grid_position: EHSVAE,CUNAHM
+    full_width_row: true
+is_package: true
