@@ -11,5 +11,5 @@ class FormBuilder(FormBuilderTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    alert(AddComponentForm)
+    alert(AddComponentForm(Label(text="This is the label")))
 

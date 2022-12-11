@@ -1,13 +1,17 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"UINOMW":15,"CUNAHM":45}'}
+  properties: {col_widths: '{"UINOMW":24,"CUNAHM":55,"FBUZDJ":1,"NRNYFY":59,"DMGUFP":1}'}
 components:
+- type: Spacer
+  properties: {height: 213}
+  name: spacer_2
+  layout_properties: {grid_position: 'XLQVCA,NRNYFY EHSVAE,FBUZDJ', full_width_row: true}
 - type: ColumnPanel
   properties: {role: tonal-card, tooltip: '', border: '', foreground: '', visible: true,
     wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"LCRQME":45,"ZDEYXZ":15}',
     spacing_below: small, background: ''}
-  name: outlined_card_1
-  layout_properties: {grid_position: 'EHSVAE,UINOMW', full_width_row: true}
+  name: content_panel
+  layout_properties: {grid_position: 'XLQVCA,NRNYFY EHSVAE,UINOMW', full_width_row: true}
   components:
   - type: Label
     properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
@@ -15,26 +19,32 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: component_sidebar_title
-    layout_properties: {grid_position: 'DVLEGV,LCRQME'}
+    layout_properties: {grid_position: 'DVLEGV,LCRQME', full_width_row: true}
   - type: Button
-    properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
+    properties: {role: filled-button, align: right, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      icon_align: top, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: 'fa:plus'}
     name: button_1
-    layout_properties: {grid_position: 'DVLEGV,ZDEYXZ'}
+    layout_properties: {grid_position: 'DVLEGV,ZDEYXZ', full_width_row: true}
     event_bindings: {click: button_1_click}
   - type: Spacer
     properties: {visible: true, spacing_above: small, spacing_below: small, height: 0,
       tooltip: ''}
     name: spacer_1
-    layout_properties: {grid_position: 'EUQUCY,QLADMH', row_background: 'theme:Secondary
-        Container'}
+    layout_properties: {grid_position: 'EUQUCY,QLADMH', row_background: 'theme:Outline'}
 - type: ColumnPanel
   properties: {role: outlined-card}
-  name: outlined_card_1_copy
+  name: survey_panel
   layout_properties:
     col_widths: {}
-    grid_position: EHSVAE,CUNAHM
+    grid_position: XLQVCA,NRNYFY EHSVAE,CUNAHM
+    full_width_row: true
+- type: Spacer
+  properties: {height: 213}
+  name: spacer_2_copy
+  layout_properties:
+    col_widths: {}
+    grid_position: XLQVCA,DMGUFP
     full_width_row: true
 is_package: true
