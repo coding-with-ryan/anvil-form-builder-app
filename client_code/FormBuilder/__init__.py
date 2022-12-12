@@ -9,16 +9,13 @@ class FormBuilder(FormBuilderTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-    self.alert_component = None
 
   def add_question_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.alert_component = alert(content=ComponentsMenu(), large=True, dismissible=True)
+    question = {}
+    new_question = alert(content=ComponentsMenu(item=question), large=True, dismissible=True)
 
-  def close_alert(self):
-    print("Closing Form")
-    print(self.alert_component)
-    if self.alert_component is not None:
-      self.alert_component.raise_event('x-close-alert')
+    print(question)
+    
     
 

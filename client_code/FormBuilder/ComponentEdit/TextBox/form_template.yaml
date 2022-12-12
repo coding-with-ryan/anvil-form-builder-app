@@ -1,12 +1,30 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"FOQFDO":5,"TEATQJ":55}'}
 components:
 - type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: This is editing a textbox, font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-    underline: false, icon: ''}
-  name: label_1
-  layout_properties: {grid_position: 'ZERKKH,IAJGWO'}
+  properties: {role: input-prompt, align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: '1', font_size: null, font: '', spacing_above: small, icon_align: right,
+    spacing_below: small, italic: false, background: '', bold: true, underline: false,
+    icon: 'fa:arrow-right'}
+  name: question_number_label
+  layout_properties: {grid_position: 'RJSMCN,FOQFDO', full_width_row: true}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: Your question here.,
+    font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+    italic: false, background: '', bold: false, underline: false}
+  name: question_textbox
+  layout_properties: {grid_position: 'RJSMCN,TEATQJ NAUQYU,DSFYNW', full_width_row: true}
+  data_bindings:
+  - {property: text, code: 'self.item[''question_textbox'']', writeback: true}
+- type: TextBox
+  properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: '', bold: false, underline: false}
+  name: description_textbox
+  layout_properties: {grid_position: 'RJSMCN,TEATQJ XZVNBI,KEWJHE', full_width_row: true}
+  data_bindings:
+  - {property: text, code: 'self.item[''description'']', writeback: true}
 is_package: true

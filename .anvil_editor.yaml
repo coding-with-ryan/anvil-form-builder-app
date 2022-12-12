@@ -4,6 +4,8 @@ unique_ids:
     FormBuilder.AddComponentForm: EQN5UD3LMGFCXQMBKRBNRZNJA6DWP2QW
     FormBuilder.ComponentEdit.TextBox: '1670802134286956830706711.4803'
     FormBuilder.ComponentsMenu: '1670801562222532898185010.5614'
+    FormBuilder.ItemTemplate1: '1670804899264415354920799.9907'
+    FormBuilder.ItemTemplate2: '1670804913499952491427953.3368'
   modules:
     FormBuilder.ComponentEdit: '1670802090695954434140977.5055'
   server_modules: {}
