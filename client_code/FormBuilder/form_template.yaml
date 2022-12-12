@@ -25,9 +25,9 @@ components:
       foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
       icon_align: top, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: 'fa:plus'}
-    name: button_1
+    name: add_question_button
     layout_properties: {grid_position: 'DVLEGV,ZDEYXZ', full_width_row: true}
-    event_bindings: {click: button_1_click}
+    event_bindings: {click: add_question_button_click}
   - type: Spacer
     properties: {visible: true, spacing_above: small, spacing_below: small, height: 0,
       tooltip: ''}

@@ -2,7 +2,10 @@ unique_ids:
   forms:
     FormBuilder: '1670788348825535131924105.47327'
     FormBuilder.AddComponentForm: EQN5UD3LMGFCXQMBKRBNRZNJA6DWP2QW
-  modules: {}
+    FormBuilder.ComponentEdit.TextBox: '1670802134286956830706711.4803'
+    FormBuilder.ComponentsMenu: '1670801562222532898185010.5614'
+  modules:
+    FormBuilder.ComponentEdit: '1670802090695954434140977.5055'
   server_modules: {}
   assets:
     standard-page.html: OVIQ2LWV35ROLEFW576LPLPJFML7ET6B
