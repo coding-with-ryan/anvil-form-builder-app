@@ -55,7 +55,4 @@ components:
       layout_properties: {grid_position: 'DXZSPQ,ZJCHOA WZHQOL,BYZPUX'}
 is_package: true
 custom_component: true
-properties:
-- {name: question_text, type: string, default_value: '', default_binding_prop: true}
-- {name: question_description, type: string, default_value: ''}
-- {name: question_number, type: string, default_value: ''}
+properties: []

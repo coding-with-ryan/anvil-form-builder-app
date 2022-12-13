@@ -10,23 +10,22 @@ class ComponentsMenu(ComponentsMenuTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-    self.question = {}
+    self.new_question = {}
 
   def short_text_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.raise_event("x-close-alert")
-    question = alert(content=TextBox(item=self.question), large=True, buttons=[("Save", True), ("Cancel", False)])
+    question = alert(content=TextBox(item=self.new_question), large=True, buttons=[("Save", True), ("Cancel", False)])
     if question:
-      print(question)
-      get_open_form().raise_event("x-save-question", new_question=question)
+      get_open_form().raise_event("x-save-question", new_question=self.new_question)
       Globals.NUMBER_OF_QUESTIONS += 1
 
   def long_text_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.raise_event("x-close-alert")
-    question = alert(content=TextBox(item=self.question), large=True, buttons=[("Save", True), ("Cancel", False)])
+    question = alert(content=TextBox(item=self.new_question), large=True, buttons=[("Save", True), ("Cancel", False)])
     if question:
-      get_open_form().raise_event("x-save-question", new_question=question)
+      get_open_form().raise_event("x-save-question", new_question=self.new_question)
       Globals.NUMBER_OF_QUESTIONS += 1
     
     

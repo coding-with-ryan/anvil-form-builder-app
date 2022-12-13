@@ -17,7 +17,7 @@ components:
   name: question_textbox
   layout_properties: {grid_position: 'RJSMCN,TEATQJ NAUQYU,DSFYNW', full_width_row: true}
   data_bindings:
-  - {property: text, code: 'self.item[''question_textbox'']', writeback: true}
+  - {property: text, code: 'self.item[''question_text'']', writeback: true}
 - type: TextBox
   properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Your question's description here,
     border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
@@ -26,5 +26,5 @@ components:
   name: description_textbox
   layout_properties: {grid_position: 'RJSMCN,TEATQJ XZVNBI,KEWJHE', full_width_row: true}
   data_bindings:
-  - {property: text, code: 'self.item[''description'']', writeback: true}
+  - {property: text, code: 'self.item[''question_description'']', writeback: true}
 is_package: true
