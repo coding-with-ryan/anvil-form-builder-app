@@ -15,17 +15,18 @@ class ComponentsMenu(ComponentsMenuTemplate):
   def short_text_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.raise_event("x-close-alert")
-    self.question = alert(content=TextBox(item=self.question), large=True, buttons=[("Save", True), ("Cancel", False)])
-    if self.question:
-      get_open_form().raise_event("x-save-question", new_question=self.question)
+    question = alert(content=TextBox(item=self.question), large=True, buttons=[("Save", True), ("Cancel", False)])
+    if question:
+      print(question)
+      get_open_form().raise_event("x-save-question", new_question=question)
       Globals.NUMBER_OF_QUESTIONS += 1
 
   def long_text_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.raise_event("x-close-alert")
-    self.question = alert(content=TextBox(item=self.question), large=True, buttons=[("Save", True), ("Cancel", False)])
-    if self.question:
-      get_open_form().raise_event("x-save-question", new_question=self.question)
+    question = alert(content=TextBox(item=self.question), large=True, buttons=[("Save", True), ("Cancel", False)])
+    if question:
+      get_open_form().raise_event("x-save-question", new_question=question)
       Globals.NUMBER_OF_QUESTIONS += 1
     
     
