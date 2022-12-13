@@ -10,12 +10,17 @@ class FormBuilder(FormBuilderTemplate):
 
     # Any code you write here will run before the form opens.
 
+    self.set_event_handler('x-save-question', self.save_question)
+
   def add_question_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    question = {}
-    new_question = alert(content=ComponentsMenu(item=question), large=True, dismissible=True)
+    new_question = alert(content=ComponentsMenu(), large=True, dismissible=True)
 
-    print(question)
+  def save_question(self, new_question, **event_args):
+    question_panel = ColumnPanel(role='outlined-card')
+    self.survey_panel.add_component(question_panel)
+    question_panel.add_component(Label(text=new_question['question_textbox']))
+    question_panel.add_component(TextBox())
     
     
 

@@ -1,9 +1,9 @@
-from ._anvil_designer import TextBoxTemplate
+from ._anvil_designer import TextAreaTemplate
 from anvil import *
 
 from ... import Globals
 
-class TextBox(TextBoxTemplate):
+class TextArea(TextAreaTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

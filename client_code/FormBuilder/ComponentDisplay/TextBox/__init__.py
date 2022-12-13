@@ -1,7 +1,7 @@
-from ._anvil_designer import ItemTemplate2Template
+from ._anvil_designer import TextBoxTemplate
 from anvil import *
 
-class ItemTemplate2(ItemTemplate2Template):
+class TextBox(TextBoxTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

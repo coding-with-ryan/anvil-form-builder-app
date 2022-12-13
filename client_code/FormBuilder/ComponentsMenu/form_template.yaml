@@ -17,6 +17,7 @@ components:
     underline: false, icon: 'fa:file-text'}
   name: long_text_button
   layout_properties: {grid_position: 'UNHGMN,VYUMAQ'}
+  event_bindings: {click: long_text_button_click}
 - type: Button
   properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
     foreground: '', visible: true, text: Number, font_size: null, font: '', spacing_above: small,

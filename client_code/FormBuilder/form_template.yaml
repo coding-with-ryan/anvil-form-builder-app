@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"UINOMW":24,"CUNAHM":55,"FBUZDJ":1,"NRNYFY":59,"DMGUFP":1}'}
+  properties: {col_widths: '{"UINOMW":24,"FBUZDJ":1,"NRNYFY":25,"DMGUFP":5,"MFLYVU":50}'}
 components:
 - type: Spacer
   properties: {height: 213}
@@ -39,11 +39,8 @@ components:
     layout_properties: {grid_position: 'TVBOCA,JOPBXK'}
 - type: ColumnPanel
   properties: {role: outlined-card}
-  name: survey_panel
-  layout_properties:
-    col_widths: {}
-    grid_position: XLQVCA,NRNYFY EHSVAE,CUNAHM
-    full_width_row: true
+  name: outlined_card_1
+  layout_properties: {grid_position: 'XLQVCA,MFLYVU', full_width_row: true}
 - type: Spacer
   properties: {height: 213}
   name: spacer_2_copy
