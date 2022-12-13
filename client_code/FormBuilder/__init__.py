@@ -19,7 +19,14 @@ class FormBuilder(FormBuilderTemplate):
     new_question = alert(content=ComponentsMenu(), large=True, dismissible=True)
 
   def save_question(self, new_question, **event_args):
-    self.survey_panel.add_component(TextBoxComponent(question_text=new_question['question_textbox'], question_description=new_question['question_description']))
+    print(new_question)
+    self.survey_panel.add_component(
+      TextBoxComponent(
+        question_text=new_question['question_textbox'], 
+        question_description=new_question['question_description'],
+        question_number=new_question['question_description']
+      )
+    )
     
     
 
