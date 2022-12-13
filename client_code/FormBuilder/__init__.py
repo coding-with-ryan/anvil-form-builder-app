@@ -3,6 +3,8 @@ from anvil import *
 from .AddComponentForm import AddComponentForm
 from .ComponentsMenu import ComponentsMenu
 
+from .ComponentDisplay.TextBoxComponent import TextBoxComponent
+
 class FormBuilder(FormBuilderTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -17,10 +19,7 @@ class FormBuilder(FormBuilderTemplate):
     new_question = alert(content=ComponentsMenu(), large=True, dismissible=True)
 
   def save_question(self, new_question, **event_args):
-    question_panel = ColumnPanel(role='outlined-card')
-    self.survey_panel.add_component(question_panel)
-    question_panel.add_component(Label(text=new_question['question_textbox']))
-    question_panel.add_component(TextBox())
+    self.survey_panel.add_component(TextBoxComponent(question_text=new_question['question_textbox'], question_description=new_question['question_description']))
     
     
 

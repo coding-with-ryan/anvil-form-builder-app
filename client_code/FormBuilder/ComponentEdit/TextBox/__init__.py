@@ -10,3 +10,4 @@ class TextBox(TextBoxTemplate):
 
     # Any code you write here will run before the form opens.
     self.question_number_label.text = Globals.NUMBER_OF_QUESTIONS + 1
+    self.item['question_number'] = Globals.NUMBER_OF_QUESTIONS + 1
