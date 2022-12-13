@@ -26,8 +26,7 @@ components:
         col_widths: {}
         grid_position: DXZSPQ,UAJWLI
         full_width_row: true
-      data_bindings:
-      - {property: text, code: 'self.item[''question_number'']'}
+      data_bindings: []
     - type: Label
       properties: {role: title, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: '', font_size: null, font: '', spacing_above: small,
@@ -35,8 +34,7 @@ components:
         underline: false, icon: ''}
       name: question_label
       layout_properties: {grid_position: 'DXZSPQ,ZJCHOA VLGJRQ,KHPOAG', full_width_row: true}
-      data_bindings:
-      - {property: text, code: 'self.item[''question_text'']'}
+      data_bindings: []
     - type: Label
       properties: {role: body, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: '', font_size: null, font: '', spacing_above: small,
@@ -44,8 +42,7 @@ components:
         underline: false, icon: ''}
       name: question_description
       layout_properties: {grid_position: 'DXZSPQ,ZJCHOA JPOEJO,QXWEDM'}
-      data_bindings:
-      - {property: text, code: 'self.item[''question_description'']'}
+      data_bindings: []
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Type your answer here...,
         border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
@@ -55,4 +52,5 @@ components:
       layout_properties: {grid_position: 'DXZSPQ,ZJCHOA WZHQOL,BYZPUX'}
 is_package: true
 custom_component: true
-properties: []
+properties:
+- {name: question_text, type: string, default_value: '', default_binding_prop: true}

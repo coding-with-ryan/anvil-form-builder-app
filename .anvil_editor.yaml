@@ -1,6 +1,7 @@
 unique_ids:
   forms:
     FormBuilder: '1670788348825535131924105.47327'
+    FormBuilder.AddComponentForm: '1670893639268684331005401.8148'
     FormBuilder.ComponentDisplay.TextBoxComponent: '1670890784300438630358517.27325'
     FormBuilder.ComponentEdit.Number: '1670890654001950376961148.9596'
     FormBuilder.ComponentEdit.TextArea: '1670889970071163766171006.6307'

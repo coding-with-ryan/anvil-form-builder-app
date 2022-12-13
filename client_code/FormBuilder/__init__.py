@@ -20,7 +20,7 @@ class FormBuilder(FormBuilderTemplate):
 
   def save_question(self, new_question, **event_args):
     print("New question from form builder: ", new_question)
-    new_component = TextBoxComponent(question=new_question)
+    new_component = TextBoxComponent(**new_question)
     self.survey_panel.add_component(new_component)
     
     
