@@ -11,4 +11,3 @@ class TextBoxComponent(TextBoxComponentTemplate):
     # self.item['question_description']=question['question_description'],
     # self.item['question_text']=question['question_number']
 
-    print(self.question_text)

@@ -26,7 +26,8 @@ components:
         col_widths: {}
         grid_position: DXZSPQ,UAJWLI
         full_width_row: true
-      data_bindings: []
+      data_bindings:
+      - {property: text, code: self.question_number}
     - type: Label
       properties: {role: title, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: '', font_size: null, font: '', spacing_above: small,
@@ -34,15 +35,17 @@ components:
         underline: false, icon: ''}
       name: question_label
       layout_properties: {grid_position: 'DXZSPQ,ZJCHOA VLGJRQ,KHPOAG', full_width_row: true}
-      data_bindings: []
+      data_bindings:
+      - {property: text, code: self.question_text}
     - type: Label
       properties: {role: body, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: '', font_size: null, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
-      name: question_description
+      name: question_description_label
       layout_properties: {grid_position: 'DXZSPQ,ZJCHOA JPOEJO,QXWEDM'}
-      data_bindings: []
+      data_bindings:
+      - {property: text, code: self.question_description}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Type your answer here...,
         border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
@@ -50,7 +53,16 @@ components:
         background: '', bold: false, underline: false}
       name: question_text_box
       layout_properties: {grid_position: 'DXZSPQ,ZJCHOA WZHQOL,BYZPUX'}
+  - type: Button
+    properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Okay, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: okay_button
+    layout_properties: {grid_position: 'AGKSLT,EBECHI'}
 is_package: true
 custom_component: true
 properties:
 - {name: question_text, type: string, default_value: '', default_binding_prop: true}
+- {name: question_description, type: string, default_value: ''}
+- {name: question_number, type: string, default_value: ''}
