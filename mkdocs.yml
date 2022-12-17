@@ -1,1 +1,9 @@
-site_name: My Docs
+site_name: Anvil Form Building App
+
+theme:
+    name: readthedocs
+
+hljs_languages:
+        - yaml
+        - python
+        - javascript
